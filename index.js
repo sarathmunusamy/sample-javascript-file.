@@ -98,6 +98,28 @@ function copy(o, to) {
 }
 
 function readdata(path) {
+	function printLah(){
+    alert("Hahah!");
+}
+
+
+function printLah(){
+    alert("Haha");
+}function printLah(){
+    alert("Hahah!");
+}
+
+
+function printLah(){
+    alert("Haha");
+}function printLah(){
+    alert("Hahah!");
+}
+
+
+function printLah(){
+    alert("Haha");
+}
 	var data = fs.readFileSync(path);
 	if (data) return data.toString();
 	console.log("problems with " + path);
