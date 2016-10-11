@@ -36,33 +36,33 @@ doT.process = function(options) {
 };
 
 function InstallDots(o) {
-	this.__path 		= o.path || "./";
-	if (this.__path[this.__path.length-1] !== '/') this.__path += '/';
-	this.__destination	= o.destination || this.__path;
-	if (this.__destination[this.__destination.length-1] !== '/') this.__destination += '/';
-	this.__global		= o.global || "window.render";
-	this.__rendermodule	= o.rendermodule || {};
-	this.__settings 	= o.templateSettings ? copy(o.templateSettings, copy(doT.templateSettings)) : undefined;
-	this.__includes		= {};
+this.__path 		= o.path || "./";
+if (this.__path[this.__path.length-1] !== '/') this.__path += '/';
+this.__destination	= o.destination || this.__path;
+if (this.__destination[this.__destination.length-1] !== '/') this.__destination += '/';
+this.__global		= o.global || "window.render";
+this.__rendermodule	= o.rendermodule || {};
+this.__settings 	= o.templateSettings ? copy(o.templateSettings, copy(doT.templateSettings)) : undefined;
+this.__includes		=           {};
 }
 
 InstallDots.prototype.compileToFile = function(path, template, def) {
-	def = def || {};
-	var modulename = path.substring(path.lastIndexOf("/")+1, path.lastIndexOf("."))
-		, defs = copy(this.__includes, copy(def))
-		, settings = this.__settings || doT.templateSettings
-		, compileoptions = copy(settings)
-		, defaultcompiled = doT.template(template, settings, defs)
-		, exports = []
-		, compiled = ""
-		, fn;
+def = def || {};
+var modulename = path.substring(path.lastIndexOf("/")+1, path.lastIndexOf("."))
+, defs = copy(this.__includes, copy(def))
+, settings = this.__settings || doT.templateSettings
+, compileoptions = copy(settings)
+, defaultcompiled = doT.template(template, settings, defs)
+, exports = []
+, compiled = ""
+, fn;
 
 	for (var property in defs) {
-		if (defs[property] !== def[property] && defs[property] !== this.__includes[property]) {
-			fn = undefined;
-			if (typeof defs[property] === 'string') {
+if (defs[property] !== def[property] && defs[property] !== this.__includes[property]) {
+fn = undefined;
+if (typeof defs[property] === 'string') {
 				fn = doT.template(defs[property], settings, defs);
-			} else if (typeof defs[property] === 'function') {
+} else if (typeof defs[property] === 'function') {
 				fn = defs[property];
 			} else if (defs[property].arg) {
 				compileoptions.varname = defs[property].arg;
