@@ -3,7 +3,7 @@
 // https://github.com/olado/doT
 //
 // doU is an extraction and slight modification of an excellent
-// templating function from jQote2.js (jQuery plugin) by aefxx
+// templating funfdsfsction from jQote2.js (jQuery plugin) by aefxx
 // (http://aefxx.com/jquery-plugins/jqote2/).
 //
 // Modifications:
