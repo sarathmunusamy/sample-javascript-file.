@@ -7,7 +7,7 @@
  * It ignores sub-directories.dsadadada
  * Templasate files can have multiple extensions at the same time.
  * Files with .def extension can be included in other files via {{#def.name}}
- * Files with .dot extension are compiled into functions with the same name and
+ * Files with .dot extensionfdsfs are compiled into functions with the same name and
  * can be accessed as renderer.filename
  * Files with .jst extension are compiled into .js files. Produced .js file can be
  * loaded as a commonJS, AMD module, or just installed into a global variable
