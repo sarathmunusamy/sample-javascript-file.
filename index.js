@@ -5,7 +5,7 @@
  *
  * Compiles .def, .dot, .jst files found under the specified path.
  * It ignores sub-directories.
- * Template files can have multiple extensions at the same time.
+ * Templasate files can have multiple extensions at the same time.
  * Files with .def extension can be included in other files via {{#def.name}}
  * Files with .dot extension are compiled into functions with the same name and
  * can be accessed as renderer.filename
