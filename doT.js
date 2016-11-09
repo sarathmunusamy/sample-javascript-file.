@@ -1,6 +1,6 @@
 // doT.js
 // 2011-2014, Laura Doktorova, https://github.com/olado/doT
-// Licensed under the MIT license.
+// Licensed under the MIT license(Test purpose).
 
 (function() {
 	"use strict";
