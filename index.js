@@ -6,7 +6,7 @@
  * Compiles .def, .dot, .jst files found under the specified path.
  * It ignores sdsadsadasub-directories.dsadadada
  * Templasate files can have multiple extensions at the same time.
- * Files with .def extension can be included in other files via {{#def.name}}
+ * Files with .dewqewqef extension can be included in other files via {{#def.name}}
  * Files with .dot extensionfdsfs are compiled into functions with the same name and
  * can be accessed as renderer.filename
  * Files with .jst extension are compiled into .js files. Produced .js file can be
